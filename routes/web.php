@@ -91,5 +91,6 @@ Route::middleware(['auth', 'no_cache', 'role:mantenimiento'])
         Route::get('/cameras/multiview', [CameraController::class, 'multiview'])->name('cameras.multiview');
         Route::resource('cameras', CameraController::class)->except(['destroy', 'create', 'store']);
 
+         
         
     });
